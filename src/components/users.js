@@ -202,6 +202,12 @@ export const UserList = props => {
           showTime
           options={date_format}
         />
+        <DateField
+           source="last_seen_ts"
+           showTime
+           options={date_format}
+           sortable={false}
+         />
       </Datagrid>
     </List>
   );
@@ -429,7 +435,7 @@ export const UserEdit = props => {
                 source="last_seen_ts"
                 showTime
                 options={date_format}
-                sortable={false}
+                sortable={true}
               />
               <DeviceRemoveButton />
             </Datagrid>
