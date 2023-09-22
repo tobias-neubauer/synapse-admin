@@ -206,7 +206,7 @@ export const UserList = props => {
            source="last_seen_ts"
            showTime
            options={date_format}
-           sortable={false}
+           sortable={true}
          />
       </Datagrid>
     </List>
